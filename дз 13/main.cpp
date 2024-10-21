@@ -5,7 +5,7 @@
 //  Created by Егор Джемлиханов on 18.10.2024.
 //
 
-#include <iostream>
+#include <iostream>          
 #include "Kvadrat.hpp"
 #include "Krug.hpp"
 #include "Treugolnik.hpp"

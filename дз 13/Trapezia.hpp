@@ -2,13 +2,11 @@
 //  Trapezia.hpp
 //  дз 13
 //
-//  Created by Егор Джемлиханов on 20.10.2024.
+//  Created by Егор Джемлиханов on 19.10.2024.
 //
 
 #pragma once
 #include "Figure.hpp"
-
-using namespace std;
 
 class Trapezia : public Figure
 {
@@ -20,18 +18,18 @@ public:
 
     void input()
     {
-        cout << "Напишите длины оснований a, b и высоту трапеции.: ";
+        cout << "Напишите длины оснований a, b и высоту трапеции: ";
         cin >> side1 >> side2 >> height;
     }
 
     void output() const
     {
-        cout << "Трапеция основание а: " << side1 << ", основание b: " << side2
-                  << ", высота: " << height << ", area: " << area() << endl;
+        cout << "Трапеция основание a: " << side1 << ", основание b: " << side2
+             << ", высота: " << height << endl;
     }
 
-    double area() const
+    void ShowArea() const
     {
-        return 0.5 * (side1 + side2) * height;
+        cout << "Площадь трапеции: " << 0.5 * (side1 + side2) * height << endl;
     }
 };

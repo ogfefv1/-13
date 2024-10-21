@@ -2,13 +2,11 @@
 //  Treugolnik.hpp
 //  дз 13
 //
-//  Created by Егор Джемлиханов on 20.10.2024.
+//  Created by Егор Джемлиханов on 19.10.2024.
 //
 
 #pragma once
 #include "Figure.hpp"
-
-using namespace std;
 
 class Treugolnik : public Figure
 {
@@ -24,12 +22,11 @@ public:
 
     void output() const
     {
-        cout << "Основание треугольник : " << side1 << ", высота: " << side2 << ", area: " << area() << endl;
+        cout << "Основание треугольника: " << side1 << ", высота: " << side2 << endl;
     }
 
-    double area() const
+    void ShowArea() const
     {
-        return 0.5 * side1 * side2;
+        cout << "Площадь треугольника: " << 0.5 * side1 * side2 << endl;
     }
 };
-

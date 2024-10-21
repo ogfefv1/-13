@@ -2,13 +2,11 @@
 //  Kvadrat.hpp
 //  дз 13
 //
-//  Created by Егор Джемлиханов on 20.10.2024.
+//  Created by Егор Джемлиханов on 18.10.2024.
 //
 
 #pragma once
 #include "Figure.hpp"
-
-using namespace std;
 
 class Kvadrat : public Figure
 {
@@ -20,17 +18,16 @@ public:
     {
         cout << "Напишите длину стороны квадрата: ";
         cin >> side1;
-        side2 = side1;  
+        side2 = side1;
     }
 
     void output() const
     {
-        cout << "Длина стороны квадрата: " << side1 << ", area: " << area() << endl;
+        cout << "Длина стороны квадрата: " << side1 << endl;
     }
 
-    double area() const
+    void ShowArea() const
     {
-        return side1 * side1;
+        cout << "Площадь квадрата: " << side1 * side1 << endl;
     }
 };
-

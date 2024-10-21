@@ -2,13 +2,11 @@
 //  Krug.hpp
 //  дз 13
 //
-//  Created by Егор Джемлиханов on 20.10.2024.
+//  Created by Егор Джемлиханов on 18.10.2024.
 //
 
 #pragma once
 #include "Figure.hpp"
-
-using namespace std;
 
 class Krug : public Figure
 {
@@ -24,13 +22,12 @@ public:
 
     void output() const
     {
-        cout << "Диаметр круга: " << side1 << ", area: " << area() << endl;
+        cout << "Диаметр круга: " << side1 << endl;
     }
 
-    double area() const
+    void ShowArea() const
     {
         double radius = side1 / 2;
-        return 3.14159 * radius * radius;
+        cout << "Площадь круга: " << 3.14159 * radius * radius << endl;
     }
 };
-
